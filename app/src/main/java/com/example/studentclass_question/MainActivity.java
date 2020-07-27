@@ -1,10 +1,10 @@
-package com.example.studentclass_question
+package com.example.studentclass_question;
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.os.Bundle;
 
-class MainActivity : AppCompatActivity() {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class MainActivity extends AppCompatActivity {
     //버튼 정의
 
 
@@ -20,9 +20,11 @@ class MainActivity : AppCompatActivity() {
     //Calculator클래스를 정의할 변수
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
 
         //xml의 버튼과 액티비티 연결
 
